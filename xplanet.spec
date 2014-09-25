@@ -1,18 +1,19 @@
+# based on PLD Linux spec git://git.pld-linux.org/packages/.git
 Summary:	Render a planetary image into an X window
 Name:		xplanet
 Version:	1.3.0
-Release:	1
+Release:	3
 License:	GPL
 Group:		X11/Amusements
 Source0:	http://downloads.sourceforge.net/xplanet/%{name}-%{version}.tar.gz
 # Source0-md5:	41f7db2ccd1d8b4b989cacaf9adfe692
-Patch0:		%{name}-giflib.patch
 URL:		http://xplanet.sourceforge.net/
 BuildRequires:	OpenGL-devel
 BuildRequires:	OpenGL-glut-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	freetype-devel
+BuildRequires:	giflib4-devel
 BuildRequires:	libjpeg-devel
 BuildRequires:	libpng-devel
 BuildRequires:	libstdc++-devel
@@ -29,7 +30,6 @@ with map files.
 
 %prep
 %setup -q
-%patch0 -p1
 
 %build
 %{__aclocal}
