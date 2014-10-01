@@ -2,7 +2,7 @@
 Summary:	Render a planetary image into an X window
 Name:		xplanet
 Version:	1.3.0
-Release:	3
+Release:	4
 License:	GPL
 Group:		X11/Amusements
 Source0:	http://downloads.sourceforge.net/xplanet/%{name}-%{version}.tar.gz
@@ -18,6 +18,7 @@ BuildRequires:	libjpeg-devel
 BuildRequires:	libpng-devel
 BuildRequires:	libstdc++-devel
 BuildRequires:	libtiff-devel
+BuildRequires:	pango-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
